@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audrey Beziat</title>
+	<meta name="description" content="Un petit exercice html" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>Where u go <span class="bp-icon bp-icon-about" data-content="Where u go vous montre pleins de lieux suprenants"></span></span>
+			<h1>Places u need to keep in mind</h1>
+			<nav>
+				<a href="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/53192358_10213124028475082_8927917036084920320_n.jpg?_nc_cat=103&_nc_ht=scontent-cdt1-1.xx&oh=f4fb8f8c57c04725d7edfafe3d3bd858&oe=5D13483B" class="bp-icon bp-icon-prev" data-info="Ce dont vous avez besoin"><span>Ce dont vous avez besoin</span></a>
+				<!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+				<a href="https://maps.google.com/" class="bp-icon bp-icon-drop" data-info="Repérez-vous, ça peut être util"><span>Utilisez Google Maps</span></a>
+			</nav>
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/montagne.png" alt="montagne" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+					<p>Le Pic du Midi ouvre un espace de ski unique dans les Pyrénées. </p>
+				</div>
+				<h2 class="slide__title"><span>À L'AIR</span>LIBRE</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/bleu.jpg" alt="Lac bleu" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+					<p>Ce lac bleu est situé à Biei sur l’ile japonaise d’Hokkaido.</p>
+				</div>
+
+
+				<h2 class="slide__title"><span>LE LAC</span> BLEU</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/maverick.jpg" alt="maverick" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+
+					</div>
+					<p>Mavericks est une destination hivernale pour certains des meilleurs surfeurs de grosses vagues du monde.</p>
+				</div>
+				<h2 class="slide__title"><span>LA BONNE VAGUE</span> MAVERICKS</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/underwater.jpg" alt="fonds marins" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+					<p>Des créatures rares et étonnantes prennent la pose dans un univers qui nous est très peu familier...</p>
+				</div>
+				<h2 class="slide__title"><span>Les fonds</span> MARINS</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/espace.jpg" alt="Espace" />
+						<div class="preview rounded">
+
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+					<p>L'espace désigne les zones de l'Univers situées au-delà des atmosphères et des corps célestes.</p>
+				</div>
+				<h2 class="slide__title"><span>L'INACESSIBLE</span> ESPACE</h2>
+			</div>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="images/picmidi.jpg" alt="Le pic du midi" />
+				<div class="content__item-inner">
+					<h2>LE PIC DU MIDI</h2>
+					<h3>Une vue hors du commun</h3>
+					<p>A l'instar de l'Aiguille du Midi à Chamonix et de La Grave dans les Alpes, le Pic du Midi ouvre un espace de ski unique dans les Pyrénées. C'est ainsi qu'à compter du 9 décembre, le 1er et le 2ème tronçon du téléphérique La Mongie-Le Taoulet et Le Taoulet-Pic du Midi seront ouverts aux skieurs aguerris. Ils accéderont ainsi à un domaine exceptionnel de ski de haute montagne.</p>
+					<p><a href="http://www.n-py.com/fr/pic-du-midi">En apprendre plus sur le pic du midi...</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="images/picmidi.jpg" alt="Encore une belle photo" />
+				<div class="content__item-inner">
+					<h2>L'ETANT DE BIEI</h2>
+					<h3>Une beauté à couper le souffle</h3>
+					<p>
+L'étant de Biei est un étang que l'on dit artificiel, créé par la main de l'Homme. À la fin des années 1980, le mont Tokachi est entré en éruption. Dans le but de protéger les constructions humaines environnantes, il fût décidé d'édifier un barrage sur la rivière Biei, afin de prévenir les éventuelles coulées de boue. L'étang bleu est l'un des étangs qui se sont formés à la suite de la construction du barrage.
+Cette couleur bleu peu commune n'est pas uniquement due au ciel qui se reflète dans l'étang. Son secret vient de la chute d'eau Shirahage non loin de là : l'eau ruisselle contre la falaise et charrie l'aluminium présent dans les parois. Mais ce n'est pas tout, d'autres substances, comme le sulfure, parviennent jusqu'au fond de l'étang, blanchissant ainsi les pierres. Et voilà comment on obtient un étang bleu turquoise !</p>
+					<p><a href="https://www.vivrelejapon.com/ville-sapporo/etang-bleu-biei-hokkaido">Pour en savoir plus...</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="images/mave.jpg" alt="La vague" />
+				<div class="content__item-inner">
+					<h2>MAVERICKS</h2>
+					<h3>Avis aux plus grands surfeurs</h3>
+					<p>Mavericks est un site de surf situé dans le nord de la Californie, en dehors du port de Pillar Point, juste au nord de la ville de Half Moon Bay, dans le village de Princeton-by-the-Sea. Après une forte tempête hivernale dans le nord de l'océan Pacifique, les vagues peuvent régulièrement atteindre une crête supérieure à 8 mètres et atteindre leur sommet à plus de 18 mètres. En règle générale, les ondes qui se brisent peuvent être enregistrées sur des sismomètres. La rupture est causée par une formation rocheuse sous-marine de forme inhabituelle.
+Mavericks est une destination hivernale pour certains des meilleurs surfeurs de grosses vagues du monde. Un concours sur invitation seulement est organisé la plupart des hivers, lorsque les vagues suffisent.</p>
+					<p><a href="http://www.theriderpost.com/disciplines/water/surf/la-vague-geante-de-mavericks-sest-reveillee/">Pour en savoir plus...</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/meduse.jpg" alt="iMac Content" />
+				<div class="content__item-inner">
+					<h2>SOUS l'EAU</h2>
+					<h3>Des créatures rares et étonnantes prennent la pose dans un univers qui nous est très peu familier...</h3>
+					<p>À quoi ressemble la vie au fond des mers et des océans ? Les scientifiques, même bien équipés, ne peuvent descendre au-delà de quelques dizaines de mètres pour récupérer des échantillons ou prendre des images des êtres vivants qui s'épanouissent sous l'eau.</p>
+					<p><a href="https://www.futura-sciences.com/planete/actualites/zoologie-video-fonds-marins-regorgent-creatures-incroyables-41219/">Pour en apprendre plus...</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="images/vide.jpg" alt="Empty space" />
+				<div class="content__item-inner">
+					<h2>L'ESPACE</h2>
+					<h3>L'endroit le plus vide de l'univers</h3>
+					<p>
+Afin de voir la lumière la plus ancienne de l’Univers, il suffit de placer un ancien téléviseur entre deux chaînes: les minuscules points qui dansent sur l’écran correspondent au fait que l’antenne est constamment bombardée de photons dont certains ont été émis environ 380 000 ans après le Big Bang, il y a environ 13,8 milliards d'années. Ces photons traversent l’espace dans toutes les directions et correspondent à une température moyenne de 2,7 kelvin (-270,45 ° C). Ils forment le fond cosmique de micro-ondes. La carte en deux dimensions de ce rayonnement est en quelque sorte la première photographie de l'Univers, dans sa jeunesse.</p>
+					<p><a href="https://www.pourlascience.fr/sd/cosmologie/lendroit-le-plus-vide-de-lunivers-9388.php">Pour en savoir plus...</a></p>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
